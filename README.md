@@ -1,7 +1,7 @@
 This is a lattice space Monte Carlo simulation package for a system 
 undergoing phase separation driven by compound formation, i.e.
 
-A + B  <-> AB
+$$A + B  \leftrightarrow AB$$
 AB + B <-> A_2B
 A_2B + A_2B + A_2B .... => Phase Separation / Aggregation
 
