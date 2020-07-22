@@ -11,13 +11,9 @@ The package was built to research the postsynaptic densities in
 neurons. Pertinent studies are published in:
 
 M. Zeng, Y. Shang, Y. Araki, T. Guo, R. L. Huganir, and M. Zhang, Cell 166, 1163--1175 (2016)
-
 Z. Feng, X. Chen1, M. Zeng, and M. Zhang, Curr. Opin. Neurobiol. 57, 1--8 (2018)
-
 M. Zeng, F. Ye1, J. Xu, and M. Zhang, J. Mol. Biol. 430, 69--86 (2018)
-
 M. Zeng, X. Chen, D. Guan, J. Xu, H. Wu, P. Tong, M. Zhang, Cell 174, 1172--1187.e16 (2018)
-
 Y.-H. Lin, H. Wu, M. Zhang, and H. S. Chan (in preparartion)
 
 
