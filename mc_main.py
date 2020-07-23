@@ -35,6 +35,7 @@ NANBs = np.array( [ [x, y] for x in NAs for y in NBs ])
 n_MCsteps = int(1e6)+1 # total number of MC steps
 snap_shot_interval = int(1e3) # number of MC steps between two snapshots 
 
+
 # Initialization
 if sys.argv[1] == 'Y':
     try:
@@ -45,6 +46,9 @@ if sys.argv[1] == 'Y':
     # Run MC
     info = (mc.NA, mc.NB, mc.L, mc.Ub1, mc.Ub2, mc.chi, mc.A2B_isL, mc.A2B_rod )
     MC_results_count = pd.DataFrame()
+
+    print('Continue a single system simulation from file:')
+    print(sys.argv[2])
 
     MCori = pd.DataFrame( \
                 {'A nothing':[0], 'A move':[0], 'A+B->AB':[0], 'A+AB->A2B':[0], \
@@ -120,10 +124,21 @@ elif sys.argv[1] == 'N': # import parameters here; may only use for scanning mul
     
     # single systme with assigned NA, NB
     if len(sys.argv) > 2:
+        print('Start new single system simulation:')
+        print('NA = ' + sys.argv[2] + ' , NB = ' + sys.argv[3]  )
+        print('L = ' + str(parset.L) + ' , U = ' + str(parset.Ub1) + ' , V = ' + str(parset.Ub2) + ' , chi = ' + str(parset.chi) )
+        print('A2B_isL: ' , parset.isL )
+        print('A2B_rod: ' , parset.rod )
         NANB = [ int(sys.argv[2]), int(sys.argv[3])]
         ps_parallel(NANB) 
     # multiple system testing, parallel by mp pool
     else:
+        print('Start new multiple system simulation:')
+        print('NA: from ' + str( int(nAmin*scan_unit) ) + ' to ' + str( int(nAmax*scan_unit)  )   )
+        print('NB: from ' + str( int(nBmin*scan_unit) ) + ' to ' + str( int(nBmax*scan_unit)  )   )
+        print('L = ' + str(parset.L) + ' , U = ' + str(parset.Ub1) + ' , V = ' + str(parset.Ub2) + ' , chi = ' + str(parset.chi) )
+        print('A2B_isL: ' , parset.isL )
+        print('A2B_rod: ' , parset.rod )
         pool = mp.Pool(processes=40)
         pool.map(ps_parallel, NANBs) 
 
