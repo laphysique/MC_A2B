@@ -16,4 +16,4 @@ M. Zeng, Y. Shang, Y. Araki, T. Guo, R. L. Huganir, and M. Zhang, Cell 166, 1163
 Z. Feng, X. Chen1, M. Zeng, and M. Zhang, Curr. Opin. Neurobiol. 57, 1--8 (2018)  
 M. Zeng, F. Ye1, J. Xu, and M. Zhang, J. Mol. Biol. 430, 69--86 (2018)  
 M. Zeng, X. Chen, D. Guan, J. Xu, H. Wu, P. Tong, M. Zhang, Cell 174, 1172--1187.e16 (2018)  
-Y.-H. Lin, H. Wu, M. Zhang, and H. S. Chan (in preparartion)  
+Y.-H. Lin, H. Wu, B. Jia, M. Zhang, and H. S. Chan Biophys. J. 121, 157-171 (2022)
